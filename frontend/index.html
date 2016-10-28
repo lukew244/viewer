@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <title>Transaction viewer</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <button id="generate-request" type="button" name="button">Generate request</button>
+    <div id="heading">
+      <h1>Transaction viewer</h1>
+      <button id="generate-request" type="button" name="button">Generate request</button>
+    </div>
 
-    <h2>Request</h2>
-    <textarea readonly id="request" name="request" rows="20" cols="60"></textarea>
+    <div id="container">
+      <div id="request">
+        <h2>Request</h2>
+        <textarea readonly id="request-text" name="request" rows="20" cols="60"></textarea>
+      </div>
 
-    <h2>Response</h2>
-    <textarea readonly id="response" name="response" rows="20" cols="60"></textarea>
+      <div id="response">
+        <h2>Response</h2>
+        <textarea readonly id="response-text" name="response" rows="20" cols="60"></textarea>
+      </div>
+          </div>
 
     <script src='src/app.js'></script>
     <script src='src/generateJSON.js'></script>

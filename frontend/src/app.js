@@ -2,7 +2,7 @@ var URL = 'http://localhost:4567/transaction';
 
 $("#generate-request").on("click", function() {
   var requestData = generateJSON();
-  $('#request').html(requestData);
+  $('#request-text').html(requestData);
   sendRequest(requestData, displayResponse);
 });
 
@@ -19,6 +19,6 @@ function sendRequest(requestData, callback) {
 
 function displayResponse(status, response) {
   if (response) JSON.parse(response);
-  $('#response').empty();
-  $('#response').append('HTTP Response code ', status, '\n', '\n', response);
+  $('#response-text').empty();
+  $('#response-text').append('HTTP Response code ', status, '\n', '\n', response);
 }

@@ -7,7 +7,6 @@ class ResponseServer < Sinatra::Base
   end
 
   post '/transaction' do
-    # puts request.body.read
     response = Response.new
     return response.generate
   end
