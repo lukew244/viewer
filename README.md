@@ -19,9 +19,7 @@ Feature tests:
 http-server
 jasmine-node spec/featureSpec.js
 ```
-On pressing the generate request button, a JSON with authentication details is created (src/generateJSON.js); the logic of sending the request and processing the response is contained in src/app.js.
-
-
+On pressing the generate request button, a JSON with authentication details is created (src/generateJSON.js); the logic of sending the request and processing the response is contained in src/app.js. The response is displayed along with the status code of the request (0 if the server cannot be reached).
 
 ## Backend - Ruby Sinatra, RSpec
 
