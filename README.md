@@ -2,7 +2,7 @@
 
 A frontend web app that makes authentication requests to a backend server using randomised data, and displays the request response.
 
-![Screenshot](https://github.com/lukew244/viewer/viewer.png)
+![Screenshot](viewer.png)
 
 ## Frontend - Javascript, JQuery, Jasmine and Zombie
 
