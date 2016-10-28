@@ -8,6 +8,7 @@ A frontend web app that makes authentication requests to a backend server using 
 
 ```
 Setup/run:
+git clone https://github.com/lukew244/viewer.git
 npm install
 http-server or open index.html
 
